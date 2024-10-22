@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailSerialActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvDetailFilm"
+            android:layout_width="fill_parent"
+            android:layout_height="450dp"
+            style="@style/CardView.Light"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/ivDetailFilmPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:scaleType="fitStart"
+                android:background="@drawable/fade_pic"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintTop_toTopOf="@+id/tvDetailFilmDetalii"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailFilmDetalii"
+                android:layout_gravity="bottom"
+                android:outlineAmbientShadowColor="#FF000000"
+                android:src="@drawable/gradient" ></ImageView>
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="90dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="310dp"
+                android:background="#F00E0D0D"
+                app:layout_constraintTop_toTopOf="@+id/cvDetailFilm"
+                app:layout_constraintEnd_toEndOf="@+id/cvDetailFilm"
+                >
+                <TextView
+                    android:id="@+id/tvTopImdb"
+                    android:text="Nota IMDb"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:textAllCaps="false"
+                    android:textColor="#F0FFFFFF"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="70dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTopImdb"
+                    android:src="@drawable/ic_star_orange_24dp"
+                    android:gravity="bottom"
+                    tools:ignore="MissingConstraints">
+                </ImageView>
+                <TextView
+                    android:id="@+id/tvDetailFilmNota"
+                    android:text=""
+                    app:layout_constraintTop_toBottomOf="@+id/tvTopImdb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:textAllCaps="false"
+                    android:textColor="#F0FFFFFF"
+                    android:textSize="29dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textStyle="bold|italic" >
+
+                </TextView>
+
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/tvDetailFilmDetalii"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvDetailFilmTitlu"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#01252b"
+            android:textColor="#FFF49200"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailFilmGen" />
+
+        <TextView
+            android:id="@+id/tvDetailFilmGen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_margin="4dp"
+            android:background="#FF006C80"
+            android:gravity="center"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/cvDetailFilm"
+            tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/tvDetailFilmIntroducere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="12dp"
+            android:justificationMode="inter_word"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:textStyle="bold|italic"
+            android:text=""
+            android:textAllCaps="false"
+
+            android:textColor="#e7000000"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailFilmTitlu" />
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/ivDetailFilmPoster2"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailFilmIntroducere"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/tvDetailFilmDescriere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:justificationMode="inter_word"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="#e7000000"
+            app:layout_constraintTop_toBottomOf="@+id/ivDetailFilmPoster2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailFilmDescriere"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layoutDetailFilm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailFilmDescriere"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailFilmDescriere"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvDetailFilmAniDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:text="Anii in care s-a filmat serialul:"
+                    android:textAllCaps="false"
+                    android:textColor="#e7000000"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tvDetailFilmAni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:justificationMode="inter_word"
+                    android:text="2000,2001."
+                    android:textAllCaps="false"
+                    android:textColor="#e7000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvDetailFilmSezoaneDesc"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:justificationMode="inter_word"
+                    android:text="Toate sezoanele:"
+                    android:textAllCaps="false"
+                    android:textColor="#e7000000"
+                    android:layout_weight="1"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvSezoane"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDetailFilmInfoSez"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:justificationMode="inter_word"
+                android:text="Pentru mai multe detalii click pe sezon."
+                android:textAllCaps="false"
+                android:textColor="#e7000000"
+                android:textStyle="italic"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

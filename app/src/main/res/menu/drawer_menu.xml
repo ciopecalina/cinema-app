@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <item android:id="@+id/item_cinematograf"
+        android:title="Cel mai apropiat cinematograf"
+        android:icon="@drawable/ic_location24dp" >
+
+    </item>
+    <item android:id="@+id/item_cinematografe"
+        android:title="Cinematografe"
+       android:icon="@drawable/ic_movie_filter_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_programCinema"
+        android:title="Program cinema"
+        android:icon="@drawable/ic_local_movies_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_prograTV"
+        android:title="Program TV"
+     android:icon="@drawable/ic_tv_black_24dp" >
+
+    </item>
+    <item android:id="@+id/item_watchlist"
+        android:title="Watchlist"
+        android:icon="@drawable/ic_live_tv_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_top_filme_bune"
+        android:title="IMDb Top Rated Movies"
+        android:icon="@drawable/ic_local_movies_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_top_filme_populare"
+        android:title="IMDb Most Popular Movies"
+        android:icon="@drawable/ic_local_movies_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_top_seriale_bune"
+        android:title="IMDb Top Rated Shows"
+        android:icon="@drawable/ic_local_movies_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_top_seriale_populare"
+        android:title="IMDb Most Popular Shows"
+        android:icon="@drawable/ic_local_movies_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_premii"
+        android:title="Premii"
+        android:icon="@drawable/ic_star_black_24dp">
+
+    </item>
+    <item android:id="@+id/item_stiri"
+        android:title="Stiri"
+        android:icon="@drawable/ic_fiber_new_black_24dp">
+
+    </item>
+
+    <item android:id="@+id/item_deconectare"
+        android:title="Deconectare"
+        android:icon="@drawable/ic_exit_to_app_black_24dp">
+
+    </item>
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#110101"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProgramCinemaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="240dp"
+                android:layout_gravity="top"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cinema_titlu">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvCinemaTitlu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="95dp"
+                android:layout_marginLeft="95dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/anunt_titlu"
+                android:textStyle="bold|italic"
+                android:textAllCaps="false"
+                android:textColor="#1B1A1A"
+                android:textSize="20sp"
+                >
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:textColor="#EBFFFFFF"
+
+            android:background="#27FFFFFF">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvAnuntIntroducere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:justificationMode="inter_word"
+            android:textColor="#EBFFFFFF"
+            android:gravity="fill_vertical"
+            android:background="#27FFFFFF">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvAnuntContinut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:justificationMode="inter_word"
+            android:textColor="#EBFFFFFF"
+            android:gravity="fill_vertical"
+            android:background="#27FFFFFF">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvAnuntSf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:justificationMode="inter_word"
+            android:textColor="#EBFFFFFF"
+            android:gravity="fill_vertical"
+            android:background="#27FFFFFF">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:textColor="#EBFFFFFF"
+
+            android:background="#27FFFFFF">
+
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:foregroundGravity="bottom"
+            android:scaleType="centerInside"
+            android:src="@drawable/scaune3">
+
+        </ImageView>
+    </LinearLayout>
+
+
+</ScrollView>

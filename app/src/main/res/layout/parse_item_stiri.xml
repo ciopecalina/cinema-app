@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardView.Dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivStire"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitStart"
+            android:layout_gravity="top">
+        </ImageView>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/gradient"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"/>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#FAFAF8F8"
+            >
+            <TextView
+                android:id="@+id/tvTitluStire"
+                android:justificationMode="inter_word"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#252424"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

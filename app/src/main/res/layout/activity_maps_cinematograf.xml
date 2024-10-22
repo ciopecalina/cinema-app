@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:id="@+id/root">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#FF292121"
+        android:layout_weight="1"
+        android:layout_height="180dp"
+        android:gravity="bottom|center"
+        android:id="@+id/mapLayout">
+
+
+        <TextView
+            android:id="@+id/tvMapsInfoCinema_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="bottom"
+            android:textColor="#F0F1E9E9"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tvMapsInfoDistanta_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="top"
+            android:textColor="#F0F1E9E9"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_weight="1"
+
+    tools:context=".CinematografMapsActivity"/>
+
+</LinearLayout>

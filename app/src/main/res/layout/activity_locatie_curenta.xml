@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/maps_background2"
+    tools:context=".LocatieCurentaActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Locatia curenta"
+        android:textSize="20sp"
+        android:layout_marginTop="220dp"
+        android:background="#FCFCFC"
+        android:textColor="#0F0E0E"
+        android:id="@+id/show_location"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afla locatia curenta"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:background="#FCFCFC"
+        android:id="@+id/getLocation"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/trimiteBtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCFCFC"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="AFISEAZA TRASEU" />
+
+</LinearLayout>

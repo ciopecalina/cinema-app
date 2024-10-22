@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CinemaApp</string>
+    <string name="read_more">Show more ▼</string>
+    <string name="read_less" tools:ignore="DuplicateDefinition">...Show less ▲</string>
+
+    <string name="anunt_titlu">Viața bate filmul</string>
+    <string name="anunt_introducere">Sunt momente în care noile lansări, covoarele roșii, premiile și starurile mai pot aștepta...</string>
+    <string name="anunt_continut">De aceea, pentru siguranța dumneavoastră, cinematografele vor fi închise începând cu 18 martie pentru o perioadă nedeterminată de timp, în acord cu Decretul nr.195/16.03.2020 privind instaurarea Stării de Urgență și Decizia CNSSU din 17.03.2020.</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="#110101"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CinematografDetailActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="240dp"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cinema_titlu">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvCinemaTitlu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginLeft="95dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text=" "
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#1B1A1A"
+        android:textSize="20sp"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="30dp"
+        android:background="#3BFFFFFF"
+        android:gravity="right"
+        android:layout_marginTop="190dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginLeft="140dp">
+
+
+    <TextView
+        android:id="@+id/tvCinemaTraseu"
+        android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+
+        android:gravity="right"
+        android:text="Vizualizeaza TRASEU"
+        android:justificationMode="inter_word"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        ></TextView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_gravity="right"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_location24dp"
+            ></ImageView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvCinemaTraseuToate"
+        android:justificationMode="inter_word"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="35dp"
+        android:text="sau afla care este cel mai apropiat cinematograf"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:gravity="right"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        ></TextView>
+
+</RelativeLayout>
+            <TextView
+                android:id="@+id/tvCinemaDescriere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:justificationMode="inter_word"
+                android:textColor="#EBFFFFFF"
+                android:gravity="fill_vertical"
+                android:background="#27FFFFFF">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tvCinemaDetalii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="fill_vertical"
+                android:justificationMode="inter_word"
+                android:textColor="#EBFFFFFF"
+                android:background="#27FFFFFF"></TextView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:foregroundGravity="bottom"
+                android:scaleType="centerInside"
+                android:src="@drawable/scaune3">
+
+            </ImageView>
+        </LinearLayout>
+
+
+        </ScrollView>

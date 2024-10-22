@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailStireActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/cvDetailStire"
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            style="@style/CardView.Light"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivDetailPosterStire"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:scaleType="fitCenter"
+             />
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="bottom"
+                android:outlineAmbientShadowColor="#FF000000"
+                android:src="@drawable/gradient" />
+
+        </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvDetailTitluStire"
+        app:layout_constraintTop_toBottomOf="@+id/cvDetailStire"
+        app:layout_constraintStart_toStartOf="@+id/cvDetailStire"
+        app:layout_constraintEnd_toEndOf="@+id/cvDetailStire"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:justificationMode="inter_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textColor="#0A0A0A"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvDetailIntroducereStire"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailTitluStire"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="@+id/tvDetailTitluStire"
+            app:layout_constraintEnd_toEndOf="@+id/tvDetailTitluStire"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tvDetailCopyrightStire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvDetailIntroducereStire"
+            app:layout_constraintStart_toStartOf="@+id/tvDetailIntroducereStire"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailIntroducereStire" />
+<TextView
+    android:id="@+id/tvDetailDescriereStire"
+    android:text=""
+    android:justificationMode="inter_word"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:layout_constraintTop_toBottomOf="@+id/tvDetailCopyrightStire"
+    android:layout_gravity="center_horizontal"
+    app:layout_constraintStart_toStartOf="@+id/tvDetailCopyrightStire"
+    app:layout_constraintEnd_toEndOf="@+id/tvDetailCopyrightStire"
+
+    android:textColor="#000000"
+    />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

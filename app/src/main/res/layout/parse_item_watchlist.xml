@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/CardView.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvWatchlistTitlu"
+                android:layout_width="310dp"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="#E9E9E9"
+                android:textColor="#0A0A0A"
+                android:text=""
+                android:layout_gravity="left"
+                android:textStyle="bold"
+
+                android:layout_height="wrap_content">
+            </TextView>
+                <ImageView
+                    android:id="@+id/ivSterge"
+                    android:layout_width="20dp"
+                    android:gravity="end"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                 android:layout_width="23dp"
+                 android:layout_height="23dp"
+                     android:layout_gravity="center_vertical|center_horizontal"
+                     android:src="@drawable/ic_schedule_black_24dp">
+                 </ImageView>
+
+                    <TextView
+                        android:id="@+id/tvWatchlistOra"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Ora"
+                        android:textColor="#BC000000"
+                  />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/ic_date_range_black_24dp">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tvWatchlistData"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#BC000000"
+                        android:text="Data"
+                        android:gravity="center_vertical"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_tv_dp">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tvWatchlistPostTv"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#BC000000"
+                        android:text="Post TV"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                       />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bob.crawlertutorialapp"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_mic"
+        android:label="CinemaApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GifActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProgramCinemaActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LogInActivity"/>
+        <activity android:name=".WatchlistActivity" />
+        <activity android:name=".TopFilmeActivity" />
+        <activity android:name=".DetailFilmProgramTvActivity" />
+        <activity android:name=".ProgramTvCompletActivity" />
+        <activity android:name=".ProgramTvActivity" />
+        <activity android:name=".PosturiTvActivity" />
+        <activity android:name=".ListaEpisoadeActivity" />
+        <activity android:name=".DetailSerialActivity" />
+        <activity android:name=".DetailFilmActivity" />
+        <activity android:name=".TopSerialeActivity" />
+        <activity android:name=".ListaPremiiActivity" />
+        <activity android:name=".IstoricPremiiActivity" />
+        <activity android:name=".PremiiActivity" />
+        <activity android:name=".CinematografeActivity" />
+        <activity android:name=".CinematografDetailActivity" />
+        <activity android:name=".DetailStireActivity" />
+        <activity android:name=".StiriActivity" />
+        <activity android:name=".LocatieCurentaActivity" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="Maps" />
+        <activity
+            android:name=".CinematografMapsActivity"
+            android:label="Maps" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCBtX5aN6WjMFLBRo4G4rrfbJm9V9JIB6U" />
+
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DetailActivity" />
+    </application>
+
+</manifest>

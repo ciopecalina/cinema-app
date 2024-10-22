@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivEpisodPoster"
+                android:layout_width="190dp"
+                android:scaleType="centerCrop"
+                android:layout_height="130dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            </ImageView>
+            <TextView
+             android:id="@+id/tvEpisodNrDesc"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#C1000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="  Episodul "
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/tvEpisodNr"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#C1000000"
+                app:layout_constraintStart_toEndOf="@+id/tvEpisodNrDesc"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+        </android.support.constraint.ConstraintLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tvEpisodTitlu"
+            android:text=""
+            android:textColor="#252424"
+            android:justificationMode="inter_word"
+            android:layout_width="100dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+        <TextView
+            android:id="@+id/tvEpisodNotaDesc"
+            android:text="Nota IMDb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAllCaps="false"
+            android:justificationMode="inter_word"
+            android:textStyle="bold|italic"
+            android:textColor="#252424"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal"
+            >
+
+        </TextView>
+        <ImageView
+            android:id="@+id/ivEpisodNota"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_star_orange_24dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvEpisodNotaDesc"
+            app:layout_constraintStart_toStartOf="@+id/tvEpisodNotaDesc"
+            android:gravity="center_vertical|center_horizontal">
+        </ImageView>
+        <TextView
+            android:id="@+id/tvEpisodNota"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@+id/tvEpisodNotaDesc"
+            app:layout_constraintStart_toEndOf="@+id/ivEpisodNota"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:textAllCaps="false"
+            android:textColor="#252424"
+            android:textSize="18dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold|italic" >
+
+        </TextView>
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvEpisodDescriere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:justificationMode="inter_word">
+
+    </TextView>
+</LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

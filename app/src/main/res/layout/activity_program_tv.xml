@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProgramTvActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="90dp">
+                <ImageView
+                    android:id="@+id/ivProgramTVlogo"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                   >
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/tvProgramTVtitlu"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvProgramTVintroducere"
+                android:text="Pentru a vedea programul TV selecteaza o zi."
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+<LinearLayout
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#E6E4E4"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvProgramTVziua1"
+            android:text=""
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="40dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#E6E4E4"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvProgramTVziua2"
+            android:text=""
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#E6E4E4"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvProgramTVziua3"
+            android:text=""
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#E6E4E4"
+        android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvProgramTVziua4"
+        android:text=""
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="120dp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </TextView>
+</LinearLayout>
+    <LinearLayout
+        android:background="#E6E4E4"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvProgramTVziua5"
+            android:text=""
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="15dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#E6E4E4"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvProgramTVziua6"
+            android:text=""
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#E6E4E4"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvProgramTVziua7"
+            android:text=""
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

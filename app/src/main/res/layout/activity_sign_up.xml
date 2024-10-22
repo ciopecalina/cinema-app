@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/tvSignUpParola1"
+
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/et_bg"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpEmail" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="35dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="35dp" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/logo_mic"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/tvSignUpNume"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/et_bg"
+
+        android:hint="Nume"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintTop_toBottomOf="@+id/logo2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        tools:layout_editor_absoluteY="185dp"
+  />
+    <EditText
+        android:id="@+id/tvSignUpEmail"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginTop="16dp"
+        android:hint="E-mail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpNume"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        tools:layout_editor_absoluteY="185dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/tvSignUpParola2"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/et_bg"
+        android:hint="Rescrie parola"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpParola1" />
+
+    <Button
+        android:id="@+id/btnSignUpInscriere"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Inscriere"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFAFA"
+        android:background="#2E2B2B"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpParola2" />
+
+
+    <TextView
+        android:id="@+id/tvSignUpSau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="SAU"
+        android:textStyle="bold"
+        android:textColor="#2E2B2B"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintBottom_toBottomOf="@id/view1SignUp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        app:layout_constraintTop_toTopOf="@id/view1SignUp"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <View
+        android:id="@+id/view1SignUp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="48dp"
+        android:background="#C95435"
+        app:layout_constraintEnd_toStartOf="@id/tvSignUpSau"
+        android:layout_marginRight="25dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUpInscriere"
+
+        />
+
+    <View
+        android:id="@+id/view2SignUp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="48dp"
+        android:background="#C95435"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintStart_toEndOf="@id/tvSignUpSau"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUpInscriere" />
+
+    <TextView
+        android:id="@+id/tvDaCont2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="right"
+        android:text="Ai deja cont?"
+        android:textColor="#2E2B2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpSau" />
+
+    <TextView
+        android:id="@+id/tvSignUpConectare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Conecteaza-te."
+        android:textColor="#2E2B2B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpSau"/>
+
+
+</android.support.constraint.ConstraintLayout>
